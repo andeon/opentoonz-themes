@@ -8,6 +8,13 @@ Installation
 1. Download the theme file;
 2. Navigate to your OpenToonz stuff directory and unzip it to config/qss.
 
+# Themes Showcase
+
+### Tahoma Theme
+![tahoma](https://user-images.githubusercontent.com/11843239/126086784-66182ecf-0f5d-4cd4-9abb-862f5df55452.jpg)
+
+
+
 Author & License
 -----------------
 Created by Anderson Prado (AndeOn)
