@@ -10,6 +10,9 @@ Installation
 
 # Themes Showcase
 
+### Harlequin Theme
+![Harlequin](https://user-images.githubusercontent.com/11843239/126886998-5f6e7309-3cb0-49b2-ae5c-c763209eb77f.jpg)
+
 ### Tahoma Theme
 ![tahoma](https://user-images.githubusercontent.com/11843239/126086784-66182ecf-0f5d-4cd4-9abb-862f5df55452.jpg)
 
