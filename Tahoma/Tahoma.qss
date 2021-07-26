@@ -1,3 +1,5 @@
+/* Tahoma
+   https://github.com/andeon/opentoonz-theme */
 /* -----------------------------------------------------------------------------
    Component: Button Styles
 ----------------------------------------------------------------------------- */
@@ -195,6 +197,7 @@ QFrame {
   border: 0;
   margin: 0;
   padding: 0;
+  alternate-background-color: #e6e6e6;
 }
 QToolTip,
 #helpToolTip {
