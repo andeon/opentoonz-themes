@@ -13,11 +13,14 @@ Installation
 ### Harlequin Theme
 ![Harlequin](https://user-images.githubusercontent.com/11843239/126886998-5f6e7309-3cb0-49b2-ae5c-c763209eb77f.jpg)
 
+### Blender Theme
+![Blender](https://user-images.githubusercontent.com/11843239/128651565-8ddef83e-907f-48d2-8b43-dc12b8301570.jpg)
+
 ### CSP Theme
 ![CSP](https://user-images.githubusercontent.com/11843239/128229739-95218162-9f56-463f-8d47-0e351dc89e05.jpg)
 
 ### Tahoma Theme
-![tahoma](https://user-images.githubusercontent.com/11843239/126086784-66182ecf-0f5d-4cd4-9abb-862f5df55452.jpg)
+![Tahoma](https://user-images.githubusercontent.com/11843239/126086784-66182ecf-0f5d-4cd4-9abb-862f5df55452.jpg)
 
 
 
