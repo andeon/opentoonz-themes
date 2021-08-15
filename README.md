@@ -31,7 +31,7 @@ Author & License
 -----------------
 Created by Anderson Prado (AndeOn)
 
-Licensed as Public Domain, CC0, free to use
+Files are based on [modified BSD license](./LICENSE.txt), therefore, based on this license, these files may be used or changed freely for business or personal use.
 
 Notes
 -----
