@@ -19,6 +19,9 @@ Installation
 ### CSP Theme
 ![CSP](https://user-images.githubusercontent.com/11843239/128229739-95218162-9f56-463f-8d47-0e351dc89e05.jpg)
 
+### Softimage Theme
+![Softimage](https://user-images.githubusercontent.com/11843239/129463436-7e4f93d4-367b-4dd8-ab1e-0219d9f1a23a.jpg)
+
 ### Tahoma Theme
 ![Tahoma](https://user-images.githubusercontent.com/11843239/128724792-ae6016d5-e33a-4141-9b26-2509d360c5c7.jpg)
 
