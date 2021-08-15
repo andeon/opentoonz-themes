@@ -5,8 +5,8 @@ This is a repository where I'll dump OpenToonz themes.
 Installation
 ------------
 
-1. Download the theme file;
-2. Navigate to your OpenToonz stuff directory and unzip it to config/qss.
+1. Choose the Download ZIP option from the Code pull-down menu;
+2. Unzip the theme folder to your OpenToonz stuff directory: config/qss
 
 # Themes Showcase
 
