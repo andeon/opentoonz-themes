@@ -1199,7 +1199,7 @@ QGroupBox:disabled {
 .Slider::groove,
 QSlider::groove {
   background-color: transparent;
-  background-image: url('../Default/imgs/white/slider-groove.svg');
+  background-image: url('../Default/imgs/white/slider-groove_dark.svg');
   background-position: center center;
   margin: 0;
 }
@@ -1217,7 +1217,7 @@ QSlider::groove:vertical {
 }
 .Slider::groove:disabled,
 QSlider::groove:disabled {
-  background-image: url('../Default/imgs/white/slider-groove_disabled.svg');
+  background-image: url('../Default/imgs/white/slider-groove_disabled_dark.svg');
 }
 .Slider::handle:horizontal,
 QSlider::handle:horizontal {
@@ -2107,7 +2107,7 @@ QToolBar#FlipConsolePlayToolBar #NextKey {
 }
 #ViewerFpsSlider {
   background-color: transparent;
-  background-image: url('../Default/imgs/white/slider-groove.svg');
+  background-image: url('../Default/imgs/white/slider-groove_dark.svg');
   background-position: center center;
   background-repeat: repeat-x;
   border: 0;
@@ -2151,18 +2151,18 @@ FlipConsole {
 }
 FlipSlider {
   qproperty-PBHeight: 15;
-  qproperty-PBOverlay: url('../Default/imgs/white/flipslider.svg');
+  qproperty-PBOverlay: url('../Default/imgs/white/flipslider_dark.svg');
   qproperty-PBColorMarginLeft: 1;
   qproperty-PBColorMarginTop: 2;
   qproperty-PBColorMarginRight: 1;
   qproperty-PBColorMarginBottom: 2;
-  qproperty-PBMarker: url('../Default/imgs/white/flipmarker.svg');
+  qproperty-PBMarker: url('../Default/imgs/white/flipmarker_dark.svg');
   qproperty-PBMarkerMarginLeft: 3;
   qproperty-PBMarkerMarginRight: 3;
   qproperty-notStartedColor: rgba(205, 101, 101, 0.78);
   qproperty-startedColor: #1abc3f;
-  qproperty-baseColor: #676767;
-  qproperty-finishedColor: #676767;
+  qproperty-baseColor: #313131;
+  qproperty-finishedColor: #313131;
 }
 Ruler {
   qproperty-ParentBGColor: #424242;
