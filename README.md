@@ -5,8 +5,9 @@ This is a repository where I'll dump OpenToonz themes.
 Installation
 ------------
 
-1. Choose the Download ZIP option from the Code pull-down menu;
+1. Choose the Download ZIP option from the Code pull-down menu
 2. Unzip the theme folder to your OpenToonz stuff directory: config/qss
+3. Open Opentoonz access the menu **File-> Preferences-> Interface** select the theme and check the dark icon option if necessary.
 
 # Themes Showcase
 
