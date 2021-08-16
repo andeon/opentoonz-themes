@@ -1232,7 +1232,7 @@ QSlider::handle:horizontal:disabled {
 }
 .Slider::handle:vertical,
 QSlider::handle:vertical {
-  margin: 0 -2;
+  margin: -1 -2;
   height: 10;
   image: url('../Default/imgs/white/slider-v-handle.svg');
 }
