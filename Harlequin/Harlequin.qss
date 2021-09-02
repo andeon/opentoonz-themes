@@ -1765,7 +1765,7 @@ SchematicViewer {
   qproperty-SchematicCamstandButtonBgOffColor: #c2c2c2;
   qproperty-SchematicCamstandButtonOffImage: url('../Default/imgs/black/schematic_table_off.svg');
   qproperty-SelectedBorderColor: #ffffff;
-  qproperty-LinkColor: #dfdfdf;
+  qproperty-LinkColor: #8e8e8e;
   qproperty-SelectedLinkColor: cyan;
   qproperty-MotionPathLinkColor: #94ee1e;
   qproperty-MotionPathSelectedLinkColor: yellow;
