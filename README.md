@@ -26,6 +26,9 @@ Installation
 ### Tahoma Theme
 ![Tahoma](https://user-images.githubusercontent.com/11843239/128724792-ae6016d5-e33a-4141-9b26-2509d360c5c7.jpg)
 
+### Godot Theme
+![Godot](https://user-images.githubusercontent.com/11843239/132375126-2ddc120b-1c20-4a48-8c37-4df87d6a6b23.jpg)
+
 
 
 Author & License
