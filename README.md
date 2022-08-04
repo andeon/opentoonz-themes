@@ -1,6 +1,6 @@
 # Unofficial opentoonz themes
 
-This is a repository where I'll dump OpenToonz themes.
+This is a repository where I'll dump OpenToonz themes. For the Tahoma2d version access my other repository: [tahoma2d-themes](https://github.com/andeon/tahoma2d-themes)
 
 Installation
 ------------
