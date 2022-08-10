@@ -4,10 +4,12 @@ This is a repository where I'll dump OpenToonz themes. For the Tahoma2d version 
 
 Installation
 ------------
+_Recommended_ - Please download the latest stable version at https://github.com/andeon/opentoonz-themes/releases
 
+Or try the latest coded
 1. Choose the Download ZIP option from the Code pull-down menu
 2. Unzip the theme folder to your OpenToonz stuff directory: config/qss
-3. Open Opentoonz access the menu **File-> Preferences-> Interface** select the theme and check the dark icon option if necessary.
+3. Open Opentoonz, access the menu **File-> Preferences-> Interface** select the theme and check the dark icon option if necessary.
 
 # Themes Showcase
 
