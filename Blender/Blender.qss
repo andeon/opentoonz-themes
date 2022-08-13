@@ -1176,13 +1176,13 @@ QRadioButton::indicator,
 QMenu::indicator:exclusive:unchecked,
 QRadioButton::indicator:unchecked,
 #CameraSettingsRadioButton_Small::indicator:unchecked {
-  image: url('../Default/imgs/white/radiobutton_unchecked.svg');
+  image: url('../Default/imgs/white/radiobutton-dark_unchecked.svg');
 }
 .RadioButton::indicator:unchecked:hover,
 QMenu::indicator:exclusive:unchecked:hover,
 QRadioButton::indicator:unchecked:hover,
 #CameraSettingsRadioButton_Small::indicator:unchecked:hover {
-  image: url('../Default/imgs/white/radiobutton_unchecked_hover.svg');
+  image: url('../Default/imgs/white/radiobutton-dark_unchecked_hover.svg');
 }
 .RadioButton::indicator:checked,
 QMenu::indicator:exclusive:checked,
@@ -1201,7 +1201,7 @@ QRadioButton::indicator:checked:disabled,
 QMenu::indicator:exclusive:disabled,
 QRadioButton::indicator:disabled,
 #CameraSettingsRadioButton_Small::indicator:disabled {
-  image: url('../Default/imgs/white/radiobutton_unchecked_disabled.svg');
+  image: url('../Default/imgs/white/radiobutton-dark_unchecked_disabled.svg');
 }
 /* -----------------------------------------------------------------------------
    GroupBox
@@ -1772,6 +1772,15 @@ ProjectPopup QLabel {
   padding-right: 5px;
 }
 /* -----------------------------------------------------------------------------
+   Frame format settings box in FormatSettingsPopup
+----------------------------------------------------------------------------- */
+#FrameFormatBoxInput {
+  border-color: rgba(124, 10, 10, 0.82);
+}
+#FrameFormatBoxOutput {
+  border-color: rgba(10, 10, 124, 0.82);
+}
+/* -----------------------------------------------------------------------------
    Schematic Viewer
 ----------------------------------------------------------------------------- */
 SchematicViewer {
@@ -1794,6 +1803,7 @@ SchematicViewer {
   qproperty-ActiveOutputColor: #4073a3;
   qproperty-OtherOutputColor: #5e9aa3;
   qproperty-XsheetColor: #62628c;
+  qproperty-PassThroughColor: #858585;
   qproperty-NormalFxColor: #5b90a3;
   qproperty-MacroFxColor: #815c79;
   qproperty-ImageAdjustFxColor: #656287;
@@ -2344,6 +2354,8 @@ XsheetViewer {
   qproperty-LightBGColor: #cbcbcb;
   qproperty-DarkBGColor: #bcbcbc;
   qproperty-DarkLineColor: #717171;
+  qproperty-TableColor: #62628c;
+  qproperty-PegColor: #9f6e3c;
   qproperty-TimelineIconLineColor: rgba(0, 0, 0, 0.3);
   qproperty-XsheetColumnNameBgColor: rgba(0, 0, 0, 0);
   qproperty-XsheetDragBarHighlightColor: rgba(255, 255, 255, 0.15);
