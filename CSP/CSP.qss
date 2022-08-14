@@ -100,6 +100,7 @@ PaletteViewer QToolBar QToolButton:pressed {
    Component: Frames
 ----------------------------------------------------------------------------- */
 .frame,
+QTabWidget::Pane,
 .GroupBox,
 #LoadLevelFrame,
 #PsdSettingsGroupBox,
@@ -125,43 +126,51 @@ QGroupBox {
   qproperty-BottomBelowLineColor: #4e4e51;
 }
 .tab-flat,
-QTabBar::tab {
+#TopBarTab::tab,
+#TabBarContainer QTabBar::tab {
   background-color: #5a5b5e;
   border-right: 1 solid #49494c;
   border-bottom: 1 solid #4e4e51;
+  border-top: 0;
+  border-left: 0;
+  border-radius: 0;
   color: #aeaeb0;
   padding: 3 4 3 4;
+  margin: 0;
 }
 .tab-flat:hover,
-QTabBar::tab:hover {
+#TopBarTab::tab:hover,
+#TabBarContainer QTabBar::tab:hover {
   background-color: #67676b;
   color: #aeaeb0;
 }
 .tab-flat:selected,
-QTabBar::tab:selected {
+#TopBarTab::tab:selected,
+#TabBarContainer QTabBar::tab:selected {
   background-color: #696a6e;
   color: #fff;
   border-bottom-color: #696a6e;
 }
 .tab-flat:only-one,
-QTabBar::tab:only-one {
+#TopBarTab::tab:only-one,
+#TabBarContainer QTabBar::tab:only-one {
   margin: 0;
 }
-.tab-round {
+.tab-round,
+QTabBar::tab {
   background-color: #5a5b5e;
-  border-top: 1 solid #4e4e51;
-  border-right: 1 solid #4e4e51;
-  border-left: 1 solid #4e4e51;
-  border-bottom: 1 solid #4e4e51;
+  border: 1 solid #4e4e51;
   color: #aeaeb0;
   margin: 3 -1 0 0;
   padding: 2 7 1 7;
 }
-.tab-round:hover {
+.tab-round:hover,
+QTabBar::tab {
   background-color: #67676b;
   color: #aeaeb0;
 }
-.tab-round:selected {
+.tab-round:selected,
+QTabBar::tab:selected {
   background-color: #696a6e;
   border-top-right-radius: 2;
   border-top-left-radius: 2;
@@ -170,15 +179,18 @@ QTabBar::tab:only-one {
   margin: 1 -1 -1 0;
   padding: 2 7 2 7;
 }
-.tab-round:only-one {
+.tab-round:only-one,
+QTabBar::tab:only-one {
   margin: 1 0 0 0;
   padding: 3 7 3 7;
 }
-.tab-round:last {
+.tab-round:last,
+QTabBar::tab:last {
   margin-right: 0;
   border-top-right-radius: 2;
 }
-.tab-round:first {
+.tab-round:first,
+QTabBar::tab:first { 
   border-top-left-radius: 2;
 }
 /* -----------------------------------------------------------------------------
@@ -270,6 +282,7 @@ QMenuBar::item:pressed {
 #TopBarTab {
   margin: 0;
   padding: 0;
+  background-color: transparent;
 }
 #TopBarTab::tab {
   background-color: #5a5b5e;
@@ -662,19 +675,19 @@ DvScrollWidget {
   border-radius: 2;
 }
 /* -----------------------------------------------------------------------------
-   Tab Containers
+   Tabs
 ----------------------------------------------------------------------------- */
-#TabBarContainer {
-  background-color: #5a5b5e;
-  qproperty-BottomAboveLineColor: #5a5b5e;
-  qproperty-BottomBelowLineColor: #4e4e51;
+QTabWidget::Pane {
+  position: absolute;
+  top: -1;
+  margin: 0 3 3 3;
 }
 QTabBar {
   background-color: #5a5b5e;
 }
-/* -----------------------------------------------------------------------------
-   Tabs
------------------------------------------------------------------------------ */
+QTabBar::tab::first {
+  margin-left: 3px;
+}
 QTabBar QToolButton {
   /* Scroll buttons */
   margin: 0;
@@ -690,6 +703,11 @@ QTabBar QToolButton:pressed {
 }
 QTabBar QToolButton:disabled {
   color: rgba(230, 230, 230, 0.4);
+}
+#TabBarContainer {
+  background-color: #5a5b5e;
+  qproperty-BottomAboveLineColor: #5a5b5e;
+  qproperty-BottomBelowLineColor: #4e4e51;
 }
 /* -----------------------------------------------------------------------------
    Item Tree
@@ -814,10 +832,25 @@ QListView {
   color: rgba(230, 230, 230, 0.4);
 }
 /* -----------------------------------------------------------------------------
+   QHeaderView
+----------------------------------------------------------------------------- */
+QHeaderView::section {
+  background-color: #232323;
+  border: 1 solid #111111;
+  padding-left: 4;
+  margin-left: -1;
+  margin-top: -1;
+}
+QTreeWidget {
+  background-color: #383838;
+  border: 1 solid #111111;
+}
+/* -----------------------------------------------------------------------------
    Push Button
 ----------------------------------------------------------------------------- */
 .Button,
 QPushButton,
+#CustomPanelButton,
 .ComboBox,
 #enableBlankFrameButton,
 QComboBox {
@@ -832,6 +865,7 @@ QComboBox {
 }
 .Button:hover,
 QPushButton:hover,
+#CustomPanelButton:hover,
 #ViewerFpsSlider::sub-line:horizontal:hover,
 #ViewerFpsSlider::add-line:horizontal:hover,
 #enableBlankFrameButton:hover {
@@ -841,6 +875,7 @@ QPushButton:hover,
 }
 .Button:pressed,
 QPushButton:pressed,
+#CustomPanelButton:pressed,
 #ViewerFpsSlider::sub-line:horizontal:pressed,
 #ViewerFpsSlider::add-line:horizontal:pressed,
 #enableBlankFrameButton:pressed {
@@ -850,6 +885,7 @@ QPushButton:pressed,
 }
 .Button:checked,
 QPushButton:checked,
+#CustomPanelButton:checked,
 #enableBlankFrameButton:checked {
   background-color: #4e4e51;
   border-color: #49494c;
@@ -857,17 +893,20 @@ QPushButton:checked,
 }
 .Button:checked:hover,
 QPushButton:checked:hover,
+#CustomPanelButton:checked:hover,
 #enableBlankFrameButton:checked:hover {
   background-color: #626266;
   border-color: #555659;
 }
 .Button:checked:hover:pressed,
 QPushButton:checked:hover:pressed,
+#CustomPanelButton:checked:hover:pressed,
 #enableBlankFrameButton:checked:hover:pressed {
   background: #555659;
 }
 .Button:disabled,
 QPushButton:disabled,
+#CustomPanelButton:disabled,
 .ComboBox:disabled,
 #ViewerFpsSlider::sub-line:horizontal:disabled,
 #ViewerFpsSlider::add-line:horizontal:disabled,
@@ -879,6 +918,9 @@ QComboBox:disabled {
 }
 #PushButton_NoPadding {
   padding: 3;
+}
+#CustomPanelButton {
+  padding: 0;
 }
 /* -----------------------------------------------------------------------------
    ComboBox
@@ -1135,13 +1177,13 @@ QRadioButton::indicator,
 QMenu::indicator:exclusive:unchecked,
 QRadioButton::indicator:unchecked,
 #CameraSettingsRadioButton_Small::indicator:unchecked {
-  image: url('../Default/imgs/white/radiobutton_unchecked.svg');
+  image: url('../Default/imgs/white/radiobutton-dark_unchecked.svg');
 }
 .RadioButton::indicator:unchecked:hover,
 QMenu::indicator:exclusive:unchecked:hover,
 QRadioButton::indicator:unchecked:hover,
 #CameraSettingsRadioButton_Small::indicator:unchecked:hover {
-  image: url('../Default/imgs/white/radiobutton_unchecked_hover.svg');
+  image: url('../Default/imgs/white/radiobutton-dark_unchecked_hover.svg');
 }
 .RadioButton::indicator:checked,
 QMenu::indicator:exclusive:checked,
@@ -1160,7 +1202,7 @@ QRadioButton::indicator:checked:disabled,
 QMenu::indicator:exclusive:disabled,
 QRadioButton::indicator:disabled,
 #CameraSettingsRadioButton_Small::indicator:disabled {
-  image: url('../Default/imgs/white/radiobutton_unchecked_disabled.svg');
+  image: url('../Default/imgs/white/radiobutton-dark_unchecked_disabled.svg');
 }
 /* -----------------------------------------------------------------------------
    GroupBox
@@ -1545,6 +1587,7 @@ QStatusBar #StatusBarLabel {
 }
 #PlainColorPageParts QLineEdit {
   max-width: 35;
+  height: 100%;
 }
 /* -----------------------------------------------------------------------------
    Palette Viewer / Studio Palette
@@ -1730,6 +1773,15 @@ ProjectPopup QLabel {
   padding-right: 5px;
 }
 /* -----------------------------------------------------------------------------
+   Frame format settings box in FormatSettingsPopup 
+----------------------------------------------------------------------------- */
+#FrameFormatBoxInput {
+  border-color: rgba(124, 10, 10, 0.82);
+}
+#FrameFormatBoxOutput {
+  border-color: rgba(10, 10, 124, 0.82);
+}
+/* -----------------------------------------------------------------------------
    Schematic Viewer
 ----------------------------------------------------------------------------- */
 SchematicViewer {
@@ -1752,6 +1804,7 @@ SchematicViewer {
   qproperty-ActiveOutputColor: #4073a3;
   qproperty-OtherOutputColor: #5e9aa3;
   qproperty-XsheetColor: #62628c;
+  qproperty-PassThroughColor: #858585;
   qproperty-NormalFxColor: #5b90a3;
   qproperty-MacroFxColor: #815c79;
   qproperty-ImageAdjustFxColor: #656287;
@@ -2302,6 +2355,8 @@ XsheetViewer {
   qproperty-LightBGColor: #ffffff;
   qproperty-DarkBGColor: #ffffff;
   qproperty-DarkLineColor: #b8b9bb;
+  qproperty-TableColor: #62628c;
+  qproperty-PegColor: #9f6e3c;
   qproperty-TimelineIconLineColor: rgba(0, 0, 0, 0.3);
   qproperty-XsheetColumnNameBgColor: rgba(0, 0, 0, 0);
   qproperty-XsheetDragBarHighlightColor: rgba(255, 255, 255, 0.15);
