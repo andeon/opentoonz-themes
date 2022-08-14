@@ -140,7 +140,7 @@ QGroupBox {
 }
 .tab-flat:hover,
 #TopBarTab::tab:hover,
-#TabBarContainer QTabBar::tab:hover {			 
+#TabBarContainer QTabBar::tab:hover {
   background-color: #353d52;
   color: #9b9ea5;
 }
@@ -682,7 +682,7 @@ QTabWidget::Pane {
   margin: 0 3 3 3;
 }
 QTabBar {
-  background-color: #2b3243;
+  background-color: transparent;
 }
 QTabBar::tab::first {
   margin-left: 3px;
@@ -841,7 +841,7 @@ QHeaderView::section {
   margin-top: -1;
 }
 QTreeWidget {
-  background-color: #383838;
+  background-color: #2b3243;
   border: 1 solid #111111;
 }
 /* -----------------------------------------------------------------------------
@@ -1551,7 +1551,7 @@ QStatusBar #StatusBarLabel {
   padding: 3 2 8 3;
 }
 #StyleEditor #bottomWidget QPushButton {
-  padding: 3 5;
+  padding: 13 5;
 }
 #HexagonalColorWheel {
   qproperty-BGColor: #333b4f;
