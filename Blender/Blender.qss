@@ -841,7 +841,7 @@ QHeaderView::section {
   margin-top: -1;
 }
 QTreeWidget {
-  background-color: #383838;
+  background-color: #282828;
   border: 1 solid #111111;
 }
 /* -----------------------------------------------------------------------------
