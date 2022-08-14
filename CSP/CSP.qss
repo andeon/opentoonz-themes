@@ -683,7 +683,7 @@ QTabWidget::Pane {
   margin: 0 3 3 3;
 }
 QTabBar {
-  background-color: #5a5b5e;
+  background-color: transparent;
 }
 QTabBar::tab::first {
   margin-left: 3px;
@@ -842,7 +842,7 @@ QHeaderView::section {
   margin-top: -1;
 }
 QTreeWidget {
-  background-color: #383838;
+  background-color: #58585c;
   border: 1 solid #111111;
 }
 /* -----------------------------------------------------------------------------
