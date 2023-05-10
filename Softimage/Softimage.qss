@@ -842,7 +842,7 @@ QHeaderView::section {
 }
 QTreeWidget {
   background-color: #908c8a;
-  border: 1 solid #111111;
+  border: 0;
 }
 /* -----------------------------------------------------------------------------
    Push Button

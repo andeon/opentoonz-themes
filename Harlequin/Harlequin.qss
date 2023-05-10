@@ -192,7 +192,7 @@ QTabBar::tab:last {
   border-top-right-radius: 2;
 }
 .tab-round:first,
-QTabBar::tab:first { 
+QTabBar::tab:first {
   border-top-left-radius: 2;
 }
 /* -----------------------------------------------------------------------------
@@ -700,7 +700,7 @@ QTabBar QToolButton:pressed {
   border-color: #aeaeae;
 }
 QTabBar QToolButton:disabled {
-  color: rgba(0, 0, 0, 0.4);							  
+  color: rgba(0, 0, 0, 0.4);
 }
 #TabBarContainer {
   background-color: #cacaca;
@@ -841,7 +841,7 @@ QHeaderView::section {
 }
 QTreeWidget {
   background-color: #ebebeb;
-  border: 1 solid #111111;
+  border: 0;
 }
 /* -----------------------------------------------------------------------------
    Push Button
@@ -1371,7 +1371,7 @@ StyledTreeView {
    Scene Cast
 ----------------------------------------------------------------------------- */
 #SceneCast QToolBar {
-  border-top: 1 solid #aeaeae;
+  border-top: 1px solid #aeaeae;
 }
 #SceneCast QToolBar::separator:horizontal {
   margin-left: 2;
@@ -2087,7 +2087,7 @@ QToolBar#WidePaddingToolBar QToolButton {
   border-right: 1px solid #b1b1b1;
   border-bottom: 0;
   max-width: 18;
-    border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
   border-top-left-radius: 8px ;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 6px;
@@ -2493,7 +2493,7 @@ QSplitter::handle:vertical {
 }
 
 QMenuBar::item:selected {
-  border: 1 solid #7E7E7E;
+  border: 1px solid #7E7E7E;
   background: qlineargradient(x1:1, y1:0, x2:1, y2:1,
   stop:0 #EAEAEA, stop:1 #D2D2D2 );
 
